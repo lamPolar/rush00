@@ -6,12 +6,12 @@
 /*   By: heeskim <heeskim@student.42seoul.k>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 18:51:31 by heeskim           #+#    #+#             */
-/*   Updated: 2021/10/10 18:52:45 by heeskim          ###   ########.fr       */
+/*   Updated: 2021/10/10 20:48:06 by heeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 void	ft_putchar(char c);
 
-void	rush( int x, int y )
+void	rush(int x, int y)
 {
 	int	row;
 	int	col;

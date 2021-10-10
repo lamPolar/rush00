@@ -6,13 +6,13 @@
 /*   By: heeskim <heeskim@student.42seoul.k>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 10:06:09 by heeskim           #+#    #+#             */
-/*   Updated: 2021/10/10 19:04:00 by heeskim          ###   ########.fr       */
+/*   Updated: 2021/10/10 18:45:20 by heeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	rush(int a, int b);
+void	rush(int a, int b);
 
 int	main(void)
 {
-	rush(10, 10);
+	rush(5, 7);
 	return (0);
 }
