@@ -6,11 +6,11 @@
 /*   By: heeskim <heeskim@student.42seoul.k>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 10:06:09 by heeskim           #+#    #+#             */
-/*   Updated: 2021/10/10 10:06:11 by heeskim          ###   ########.fr       */
+/*   Updated: 2021/10/10 10:40:17 by heeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int main() {
-  rush(4,4);
-  return (0);
+int	main(void)
+{
+	rush(4, 4);
+	return (0);
 }
