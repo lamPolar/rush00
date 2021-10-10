@@ -1,18 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   rush03.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: heeskim <heeskim@student.42seoul.k>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/10 10:06:09 by heeskim           #+#    #+#             */
-/*   Updated: 2021/10/10 19:04:00 by heeskim          ###   ########.fr       */
+/*   Created: 2021/10/10 10:12:05 by heeskim           #+#    #+#             */
+/*   Updated: 2021/10/10 19:01:06 by heeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	rush(int a, int b);
+void	ft_putchar(char c);
 
-int	main(void)
+void	rush( int x, int y )
 {
-	rush(10, 10);
-	return (0);
+	int	row;
+	int	col;
+
+	row = 0;
+	while (row++ < y)
+	{
+		col = 0;
+		while (col++ < x)
+		{
+			if (row == 1 && (col == 1 || col == x))
+				ft_putchar('A');
+			else if (row == y && (col == 1 || col == x))
+				ft_putchar('C');
+			else if (row == 1 || row == y || col == 1 || col == x)
+				ft_putchar('B');
+			else
+				ft_putchar(' ');
+		}
+		ft_putchar('\n');
+	}
 }
