@@ -6,26 +6,29 @@
 /*   By: heeskim <heeskim@student.42seoul.k>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 10:12:05 by heeskim           #+#    #+#             */
-/*   Updated: 2021/10/10 14:03:20 by heeskim          ###   ########.fr       */
+/*   Updated: 2021/10/10 14:23:37 by heeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	rush( int x, int y )
+void	ft_putchar(char c);
+
+void	rush( int x, int y )
 {
-	int	i;
-	int	j;
-	i = 0;
-	j = 0;
-	while (i++ < y)
+	int	row;
+	int	col;
+
+	row = 0;
+	while (row++ < y)
 	{
-		while (j++ < x)
+		col = 0;
+		while (col++ < x)
 		{
-			if (i == 0 || i == y - 1)
+			if (row == 1 || row == y)
 			{
-				if (j == 0)
+				if (col == 1)
 				{
 					ft_putchar('A');
 				}
-				else if (j == x - 1)
+				else if (col == x)
 				{
 					ft_putchar('C');
 				}
@@ -36,7 +39,7 @@ int	rush( int x, int y )
 			}
 			else
 			{
-				if (j == 0 || j == x - 1)
+				if (col == 1 || col == x)
 				{
 					ft_putchar('B');
 				}
